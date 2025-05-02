@@ -4,13 +4,23 @@
     &__list{
         display: flex;
         justify-content: center;
+        
         text-align:center;
         gap: 72px;
+
+        @include mobile{
+            flex-direction: column;
+            gap: 24px;
+        }
     }
 
     
     &__title{
         margin-bottom: 30px;
         color:var(--color-accent);
+
+        @include mobile{
+            margin-bottom: 20px;
+        }
        }
 }

@@ -356,7 +356,7 @@ h3, .h3 {
 .button--video::before {
   content: "";
   position: relative;
-   width: 0;/*g Нулевая ширина для создания треугольника */ 
+  width: 0; /* Нулевая ширина для создания треугольника */
   height: 0;
   margin-right: 15px;
   border-left: 9px solid var(--color-light); /* Цвет треугольника */
@@ -612,6 +612,11 @@ h3, .h3 {
   text-align: center;
   margin-bottom: 75px;
 }
+@media (max-width: 767px) {
+  .section__header {
+    margin-bottom: 32px;
+  }
+}
 .section__description {
   max-width: 644px;
 }
@@ -667,7 +672,18 @@ h3, .h3 {
   text-align: center;
   gap: 72px;
 }
+@media (max-width: 767px) {
+  .statistics__list {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
 .statistics__title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--color-accent);
+}
+@media (max-width: 767px) {
+  .statistics__title {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=styles.css.map */
