@@ -1,0 +1,56 @@
+
+    .button{
+        @include flex-center(true);
+
+        
+
+        font-size: 16px;
+        height: var(--button-height);
+        padding-inline: 24px;
+        background-color:var(--color-accent);
+        color:var(--color-dark);
+        border-radius: 40px;
+       border: 2px solid transparent;
+
+        @include hover{
+            background-color:transparent;
+            color:var(--color-accent);
+            border: 2px solid var(--color-accent);
+            transition: var(--transition-duration);
+            
+            &::before{
+               
+                    border-left-color: var(--color-accent); /* Цвет треугольника при наведении */
+               
+            }
+        }
+
+        &--transparent{
+            background-color:transparent;
+            
+            color: var(--color-light)
+        }
+
+        &--video{
+            background-color: transparent;
+            color:var(--color-light);
+            border:var(--border);
+            
+            &::before{
+
+                content: '';
+                position: relative;
+                width: 0; /* Нулевая ширина для создания треугольника */
+                height: 0; 
+                margin-right: 15px;
+                border-left: 9px solid var(--color-light); /* Цвет треугольника */
+                border-top: 5px solid transparent; /* Прозрачный верх */
+                border-bottom: 5px solid transparent; /* Прозрачный низ */
+            }
+
+            
+            
+            
+        }
+    }
+   

@@ -1,0 +1,9 @@
+.glow{
+    background-image: 
+    radial-gradient(
+      circle at max(0%,calc((90vw - 900px)/2)),
+      rgba(74, 90, 236, 0.16) 0%, 
+      rgba(0, 0, 0, 1) clamp(200px, 32%, 300px), 
+      rgba(0, 0, 0, 1) 100%
+    );
+}

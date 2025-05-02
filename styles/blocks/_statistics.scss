@@ -1,0 +1,16 @@
+.statistics{
+
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        gap: 72px;
+    }
+
+    
+    &__title{
+        margin-bottom: 30px;
+        color:var(--color-accent);
+       }
+}

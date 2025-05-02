@@ -1,0 +1,29 @@
+.tag{
+    --tagHeight:41px;
+    --paddingInlineTag:20px;
+
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    color:var(--color-accent);
+    padding-inline: var(--paddingInlineTag);
+    height: var(--tagHeight);
+    border:var(--border);
+    border-radius: var(--border-radius-large);
+
+    &-online{
+        --tagHeight:37px;
+        --paddingInlineTag:12px;
+
+        &::before{
+            @include square(9px);
+    
+            content: '';
+            background-color: var(--color-accent);
+            border-radius:50%;
+            margin-right: 8px;
+        }
+    }
+
+    
+}

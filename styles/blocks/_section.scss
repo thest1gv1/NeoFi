@@ -1,0 +1,26 @@
+.section{
+    padding-block: var(--section-padding-y);
+
+    @include mobile{
+        padding-block:40px;
+    }
+   
+    &__header{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items:center;
+        text-align: center;
+        margin-bottom: 75px;
+  
+    }
+
+    &__description{
+        max-width: 644px;
+        
+
+        @include mobile{
+            font-size: 16px;
+        }
+    }
+}

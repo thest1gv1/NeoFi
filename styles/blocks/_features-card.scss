@@ -1,0 +1,39 @@
+.features-card{
+    
+    
+    padding: 30px  24px;
+    max-width: 384px;
+    min-width: 362px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+
+    @include tablet-above{
+        padding: 48px  36px;
+    }
+
+   
+
+    
+
+    border: var(--border);
+    border-radius: var(--border-radius-small);
+
+    background-color: var(--color-dark-alt);
+  
+
+    &__icon{
+        color: var(--color-accent);
+        margin-bottom: 36px;
+    }
+
+    &__title{
+        margin-bottom: 16px;
+    }
+
+    &__description{
+        font-size: 16px;
+        line-height: normal;
+    }
+}
