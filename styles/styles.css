@@ -356,7 +356,7 @@ h3, .h3 {
 .button--video::before {
   content: "";
   position: relative;
-  width: 0;g Нулевая ширина для создания треугольника */
+   width: 0;/*g Нулевая ширина для создания треугольника */ 
   height: 0;
   margin-right: 15px;
   border-left: 9px solid var(--color-light); /* Цвет треугольника */
@@ -668,6 +668,6 @@ h3, .h3 {
   gap: 72px;
 }
 .statistics__title {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: var(--color-accent);
 }/*# sourceMappingURL=styles.css.map */
