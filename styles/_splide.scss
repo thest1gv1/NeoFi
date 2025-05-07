@@ -1,0 +1,13 @@
+.splide{
+   
+
+    &:not(:last-child){
+        margin-bottom: 20px;
+    }
+    
+
+
+    &__pagination {
+        bottom: -1.5em;
+}
+}

@@ -310,6 +310,13 @@ h3, .h3 {
   font-weight: 400;
 }
 
+.splide:not(:last-child) {
+  margin-bottom: 20px;
+}
+.splide__pagination {
+  bottom: -1.5em;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -738,4 +745,42 @@ h3, .h3 {
 .advantages-card__description {
   font-size: 16px;
   line-height: 130%;
+}
+
+.testimonial-card {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 32px;
+  min-height: 280px;
+  background-color: var(--color-dark);
+  border: var(--border);
+  border-radius: var(--border-radius-small);
+}
+.testimonial-card:hover {
+  cursor: grab;
+}
+.testimonial-card:active {
+  cursor: grabbing;
+}
+.testimonial-card__post {
+  font-size: 16px;
+  color: var(--color-light);
+}
+.testimonial-card__body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+.testimonial-card__image {
+  border-radius: 50%;
+}
+.testimonial-card__name {
+  font-size: 16px;
+}
+.testimonial-card__specialization {
+  font-size: 12px;
+  color: var(--color-gray-alt);
 }/*# sourceMappingURL=styles.css.map */
