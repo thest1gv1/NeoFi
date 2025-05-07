@@ -11,12 +11,22 @@
         row-gap: 20px;
         align-items:center;
         text-align: center;
-        margin-bottom: 75px;
+        
+        &:not(:last-child){
+            margin-bottom: 75px;
+        }
+        
 
         @include mobile{
-            margin-bottom: 32px;
+            &:not(:last-child){
+                margin-bottom: 32px;
+            }
         }
   
+    }
+
+    &__title{
+        max-width: 878px;
     }
 
     &__description{

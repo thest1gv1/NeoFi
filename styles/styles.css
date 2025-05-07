@@ -303,6 +303,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: clamp(28px, 3.3333333333vw, 48px);
   font-weight: 400;
+  line-height: 120%;
 }
 
 h3, .h3 {
@@ -315,7 +316,7 @@ h3, .h3 {
   margin-bottom: 20px;
 }
 .splide__pagination {
-  bottom: -1.5em;
+  bottom: -1.9em;
 }
 
 .button {
@@ -618,12 +619,17 @@ h3, .h3 {
   row-gap: 20px;
   align-items: center;
   text-align: center;
+}
+.section__header:not(:last-child) {
   margin-bottom: 75px;
 }
 @media (max-width: 767px) {
-  .section__header {
+  .section__header:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+.section__title {
+  max-width: 878px;
 }
 .section__description {
   max-width: 644px;
