@@ -823,7 +823,7 @@ h3, .h3 {
      -moz-user-select: none;
           user-select: none;
 }
-.faq__accordion-header::-webkit-details-marker {
+.faq__accordion-header::marker, .faq__accordion-header::-webkit-details-marker {
   display: none;
 }
 @media (max-width: 767px) {
