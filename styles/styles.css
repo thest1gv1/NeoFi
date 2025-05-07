@@ -817,6 +817,7 @@ h3, .h3 {
   align-items: center;
   -moz-column-gap: 50px;
        column-gap: 50px;
+  list-style: none;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
