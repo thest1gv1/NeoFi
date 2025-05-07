@@ -67,3 +67,12 @@ const splide = new Splide( '#splide1', {
   
   splideTwo.mount(window.splide.Extensions);
   
+
+  const links = document.querySelectorAll('.mobile-overlay__link');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileOverlay.close(); // Закрыть модальное окно
+        });
+    });
