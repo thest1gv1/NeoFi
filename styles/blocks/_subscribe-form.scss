@@ -1,0 +1,47 @@
+.subscribe-form{
+    
+    
+
+    &__title{
+        font-size: 20px;
+        margin-bottom: 20px;
+
+        @include tablet-above{
+            max-width: 198px;
+        }
+        
+    }
+
+    &__group{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        padding-bottom: 16px;
+        border-bottom: var(--border);
+        justify-content: space-between;
+       
+        
+    }
+
+   
+
+   &__input{
+
+    &::placeholder{
+        
+        font-size: 16px;
+    }
+
+    &:focus{
+        outline: none;
+    }
+
+    font-size: 14px;
+    
+    
+    border: none;
+    color:var(--color-light);
+    background-color: transparent;
+   }
+
+}

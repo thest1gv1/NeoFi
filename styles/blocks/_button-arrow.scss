@@ -1,0 +1,16 @@
+.button-arrow{
+    
+    @include reset-button;
+    @include square(40px);
+    @include flex-center(false);
+
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    border: 2px solid transparent;
+
+    @include hover{
+        background-color:transparent;
+        color:var(--color-accent);
+        border: 2px solid var(--color-accent);
+    }
+}

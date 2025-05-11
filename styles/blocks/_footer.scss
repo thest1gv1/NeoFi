@@ -1,0 +1,86 @@
+.footer{
+
+    padding-top: 80px;
+
+    @include tablet{
+        padding-top: 40px;
+    }
+
+    &__logo{
+        flex-shrink: 0;
+    }
+
+    &__inner{
+        display: flex;
+        gap: 85px;
+        padding:40px 0 ;
+        
+        
+        @include tablet{
+            flex-direction: column;
+            gap: 40px;
+            padding: 0;
+            align-items:center;
+        }
+    }
+   
+    &__menu{
+        display: flex;
+        gap: 85px;
+        align-items:start;
+        margin-right: auto;
+
+        @include tablet{
+            
+            margin-right: 0;
+        }
+
+        @include mobile{
+            flex-direction: column;
+            gap: 50px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    &__section{
+      
+
+        &-title{
+            font-size: 20px;
+            margin-bottom: 24px;
+
+            @include tablet{
+                margin-bottom: 12px;
+            }
+        }
+        
+        &-list{
+            display: flex;
+            flex-direction: column;
+            row-gap: 2px;
+            
+        }
+        
+        &-link{
+            font-size: 14px;
+            
+            @include hover{
+                color: var(--color-accent);
+            }
+        }
+    }
+
+    &__extra{
+        padding: 40px 0;
+        text-align: center;
+        font-size: 12px;
+
+        @include tablet{
+            padding: 20px 0;
+        }
+    }
+        
+
+    
+}
